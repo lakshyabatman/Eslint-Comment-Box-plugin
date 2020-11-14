@@ -70,5 +70,15 @@ ruleTester.run("description-before-functions", rule, {
         },
       ],
     },
+    {
+      code: `// test comment
+        function test(props) { return props;}`,
+      errors: [
+        {
+          message: "Add a proper comment fields to describe about the method",
+          type: "FunctionDeclaration",
+        },
+      ],
+    },
   ],
 });
