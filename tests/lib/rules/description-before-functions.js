@@ -63,7 +63,7 @@ ruleTester.run("description-before-functions", rule, {
     * 
     * @returns
     */
-    function test(props) { return props; }`,
+function test(props) { return props; }`,
     },
     {
       code: `/**
