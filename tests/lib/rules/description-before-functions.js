@@ -56,6 +56,14 @@ ruleTester.run("description-before-functions", rule, {
           type: "FunctionDeclaration",
         },
       ],
+      output: `/**
+    * @description
+    * 
+    * @params
+    * 
+    * @returns
+    */
+    function test(props) { return props; }`,
     },
     {
       code: `/**
